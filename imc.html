@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>O programa</title>
+</head>
+
+<body>
+
+	<script>
+
+
+		function pulaLinha() {
+
+			document.write("<br>");
+			document.write("<br>");
+		}
+
+		function titulofunc(texto) {
+			document.write("<h1>" + texto + "<h1>");
+			pulaLinha();
+		}
+
+		function mostra(texto) {
+			document.write(texto);
+			pulaLinha();
+		}
+
+		function calculaimc(nome, altura, peso) {
+
+			var imc = peso / (altura * altura);
+
+			mostra("o imc do " + nome + " é " + imc)
+
+			return imc;
+
+		}
+		var alturainformada = prompt("Informe a altura")
+		var pesoinformada = prompt("Informe o peso")
+
+		var titulo = "Bem-vindo ao meu programa!";
+		titulofunc(titulo)
+
+
+
+
+		var meuimc = calculaimc("joao", alturainformada, pesoinformada)
+
+		var imcamigo = calculaimc("joao", 1.70, 83)
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O programa</title>
+</head>
+
+<body>
+
+    <script>
+		
+		document.write("batata");
+		
+		function pularLinha() {
+			alert("oi")
+			document.write("<br>");
+		}
+		
+		function mostra(parametro){
+			document.write("<br>")
+			document.write(parametro)
+		}
+		pularLinha()
+		
+        var pularTresLinas = "<br><br><br>"
+
+        var ano = 2006;
+
+        document.write("Flavio tem " + (ano - 1977) + "anos");
+        document.write("<br>");
+        document.write("joaqui tem " + (ano - 1996) + "anos");
+        document.write("<br>");
+		mostra("bom dia gente")
+
+        ano = 2007;
+
+        document.write("barney tem " + (ano - 1976) + "anos");
+        document.write("<br><br><br>");
+
+
+        var idadeFlavio = 39;
+        var idadeJoaqui = 20;
+        var idadeBarney = 41;
+
+        var media = (idadeBarney + idadeFlavio + idadeJoaqui) / 3;
+
+        document.write(media)
+        document.write(pularTresLinas)
+        document.write("A media da sidade é " + Math.round(media));
+
+    </script>
+
+</body>
+
+</html>
